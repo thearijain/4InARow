@@ -16,6 +16,7 @@
 		D50FB5EC23EE168D00F460C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D50FB5EA23EE168D00F460C7 /* LaunchScreen.storyboard */; };
 		D50FB5F723EE168D00F460C7 /* _InARowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50FB5F623EE168D00F460C7 /* _InARowTests.swift */; };
 		D50FB60223EE168D00F460C7 /* _InARowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50FB60123EE168D00F460C7 /* _InARowUITests.swift */; };
+		D59D75BF23EE296A001B0331 /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59D75BE23EE296A001B0331 /* Frame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D50FB5FD23EE168D00F460C7 /* 4InARowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 4InARowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50FB60123EE168D00F460C7 /* _InARowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _InARowUITests.swift; sourceTree = "<group>"; };
 		D50FB60323EE168D00F460C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D59D75BE23EE296A001B0331 /* Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +105,13 @@
 			children = (
 				D50FB5DC23EE168B00F460C7 /* AppDelegate.swift */,
 				D50FB5DE23EE168B00F460C7 /* SceneDelegate.swift */,
-				D50FB5E023EE168B00F460C7 /* ViewController.swift */,
 				D50FB5E223EE168B00F460C7 /* Main.storyboard */,
 				D50FB5E823EE168D00F460C7 /* Assets.xcassets */,
 				D50FB5EA23EE168D00F460C7 /* LaunchScreen.storyboard */,
 				D50FB5ED23EE168D00F460C7 /* Info.plist */,
 				D50FB5E523EE168B00F460C7 /* _InARow.xcdatamodeld */,
+				D50FB5E023EE168B00F460C7 /* ViewController.swift */,
+				D59D75BE23EE296A001B0331 /* Frame.swift */,
 			);
 			path = 4InARow;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				D50FB5DD23EE168B00F460C7 /* AppDelegate.swift in Sources */,
 				D50FB5DF23EE168B00F460C7 /* SceneDelegate.swift in Sources */,
 				D50FB5E723EE168B00F460C7 /* _InARow.xcdatamodeld in Sources */,
+				D59D75BF23EE296A001B0331 /* Frame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +452,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ArihantJain.-InARow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -466,7 +470,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ArihantJain.-InARow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
