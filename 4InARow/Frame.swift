@@ -29,17 +29,6 @@ class Frame: NSObject {
     
     override init() {
         spaces = Array(repeating: Array(repeating: Chip.null, count: height), count: width)
-        
-        //randomizes who gets the first move
-        //MIGHT HAVE TO REMOVE THIS LATER
-//        let initialPlayer = Int.random(in: 0..<2)
-//        if initialPlayer == 1 {
-//            currentChip = computerChip
-//            currentChipName = "greenChip"
-//        } else {
-//            currentChip = playerChip
-//            currentChipName = "pinkChip"
-//        }
         currentChip = Chip.pink
         currentChipName = "pinkChip"
         
@@ -99,12 +88,13 @@ class Frame: NSObject {
         }
     }
     
-    
+    //Checks if there is a win only from the most recently added chip
     func isWin(Row row: Int, Column column: Int, ChipColor: Chip) -> Bool {
         print(column, ", ", row)
         
         //Checks if atleast 7 chips have been played
-        if (ViewController.chipsPlayed < 6) { return false }
+        if (ViewController.chipsPlayed < 6) { print("didnt run")
+            return false }
         
         //Checks right horizontally
         var count = 1

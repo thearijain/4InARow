@@ -19,8 +19,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                                 <color key="backgroundColor" red="0.10588235410000001" green="0.1058823839" blue="0.10588235410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grid" translatesAutoresizingMaskIntoConstraints="NO" id="e99-ju-16K">
-                                <rect key="frame" x="149" y="118" width="814" height="696"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grid" translatesAutoresizingMaskIntoConstraints="NO" id="e99-ju-16K">
+                                <rect key="frame" x="149" y="118" width="814.00000000000023" height="696"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aA0-1H-bvE">
                                 <rect key="frame" x="149" y="118" width="814" height="696"/>
@@ -76,6 +76,12 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONNECT 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rlm-Dc-hAV">
+                                <rect key="frame" x="399" y="37" width="316" height="71"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="54"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -90,6 +96,8 @@
                             <constraint firstItem="aA0-1H-bvE" firstAttribute="leading" secondItem="Tr3-0K-Ulc" secondAttribute="leading" constant="149" id="sAG-Wk-hjh"/>
                             <constraint firstItem="vaZ-Ug-3Yz" firstAttribute="leading" secondItem="Tr3-0K-Ulc" secondAttribute="leading" id="tgi-14-bxE"/>
                             <constraint firstItem="Tr3-0K-Ulc" firstAttribute="bottom" secondItem="aA0-1H-bvE" secondAttribute="bottom" constant="20" id="ufv-v9-aCV"/>
+                            <constraint firstItem="Rlm-Dc-hAV" firstAttribute="top" secondItem="Tr3-0K-Ulc" secondAttribute="top" constant="37" id="yje-IC-hh4"/>
+                            <constraint firstItem="Rlm-Dc-hAV" firstAttribute="leading" secondItem="Tr3-0K-Ulc" secondAttribute="leading" constant="399" id="yle-jG-zn0"/>
                             <constraint firstItem="vaZ-Ug-3Yz" firstAttribute="bottom" secondItem="Tr3-0K-Ulc" secondAttribute="bottom" id="zfW-XA-js8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Tr3-0K-Ulc"/>
@@ -111,6 +119,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Grid" width="873.5" height="701"/>
+        <image name="grid" width="873.5" height="701"/>
     </resources>
 </document>

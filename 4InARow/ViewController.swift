@@ -14,33 +14,43 @@ class ViewController: UIViewController {
     //Array of column buttons
     @IBOutlet var colButtons: [UIButton]!
     
+    @IBOutlet weak var stackView: UIStackView!
     static var chipsPlayed = 0
     var frame: Frame!
-    @IBOutlet weak var stackView: UIStackView!
-    
+    var label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
+
     override func viewDidLoad() {
         frame = Frame()
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+            //Creates the label indicating who's turn it is
+            label.center = CGPoint(x: 800, y: 50)
+            label.textAlignment = .center
+            label.text = "YOUR TURN"
+            label.font = label.font.withSize(22)
+            view.addSubview(label)
+        
     }
     
     @IBAction func play(_ sender: UIButton) {
-        let column  = sender.tag
         
+        let column  = sender.tag
         if (frame.isColumnFull(column: column)) {
             dropChip(chip: frame.currentChip, Column: column)
             frame.set(column: column)
             frame.switchColor()
+            ViewController.chipsPlayed += 1
             
             if (frame.currentChip == Chip.green) {
+                self.label.text = "COMPUTER'S TURN"
                 //Allows code to run after 1 second
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     self.opponentTurn()
                 }
             }
-            
+            //opponentTurn()
         }
     }
         
@@ -51,6 +61,8 @@ class ViewController: UIViewController {
             dropChip(chip: frame.currentChip, Column: column)
             frame.set(column: column)
             frame.switchColor()
+            ViewController.chipsPlayed += 1
+            label.text = "YOUR TURN"
         }
     }
 
