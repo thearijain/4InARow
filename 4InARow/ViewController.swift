@@ -15,9 +15,12 @@ class ViewController: UIViewController {
     @IBOutlet var colButtons: [UIButton]!
     
     @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var computerImage: UIImageView!
+    @IBOutlet weak var youImage: UIImageView!
+    
     static var chipsPlayed = 0
     var frame: Frame!
-    var label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
+    var label = UILabel(frame: CGRect(x: 0, y: 0, width: 250, height: 21))
 
     override func viewDidLoad() {
         frame = Frame()
@@ -25,12 +28,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-            //Creates the label indicating who's turn it is
-            label.center = CGPoint(x: 800, y: 50)
-            label.textAlignment = .center
-            label.text = "YOUR TURN"
-            label.font = label.font.withSize(22)
-            view.addSubview(label)
+        youImage.isHighlighted = true
+        
         
     }
     
@@ -44,8 +43,8 @@ class ViewController: UIViewController {
             ViewController.chipsPlayed += 1
             
             if (frame.currentChip == Chip.green) {
-                self.label.text = "COMPUTER'S TURN"
-                //Allows code to run after 1 second
+                youImage.isHighlighted = false
+                computerImage.isHighlighted = true
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     self.opponentTurn()
                 }
@@ -62,7 +61,8 @@ class ViewController: UIViewController {
             frame.set(column: column)
             frame.switchColor()
             ViewController.chipsPlayed += 1
-            label.text = "YOUR TURN"
+            youImage.isHighlighted = true
+            computerImage.isHighlighted = false
         }
     }
 
@@ -73,7 +73,7 @@ class ViewController: UIViewController {
         let imageViewObj = UIImageView(frame: CGRect(x: xcoor, y: -chipSize() * 3, width: chipSize(), height: chipSize()))
         imageViewObj.image = UIImage(named:frame.currentChipName!)
         stackView.addSubview(imageViewObj)
-        
+
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseIn, animations:{
             imageViewObj.frame.origin.y = ycoor
         }, completion: nil)
@@ -89,6 +89,27 @@ class ViewController: UIViewController {
     
     func chipSize() -> CGFloat {
         return min(stackView.frame.height / 6 - 16, stackView.frame.width / 7 - 16)
+    }
+    
+    func resetGame() {
+        ViewController.chipsPlayed = 0
+        
+        for view in stackView.subviews{
+            view.removeFromSuperview()
+        }
+        
+        frame = .init()
+    }
+    
+    func youWon() {
+        
+        let imageViewObj = UIImageView(frame: CGRect(x: 350, y: -172.47, width: CGFloat(483.54), height: CGFloat(172.47)))
+        imageViewObj.image = UIImage(named: "youWin")
+        stackView.addSubview(imageViewObj)
+
+        UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseIn, animations:{
+         imageViewObj.frame.origin.y = 500
+        }, completion: nil)
     }
 }
 
