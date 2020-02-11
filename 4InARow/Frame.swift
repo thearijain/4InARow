@@ -90,7 +90,6 @@ class Frame: NSObject {
     
     //Checks if there is a win only from the most recently added chip
     func isWin(Row row: Int, Column column: Int, ChipColor: Chip) -> Bool {
-        print(column, ", ", row)
         
         //Keeping count of a diagonal 4 in a row
         var count = 0
@@ -151,7 +150,6 @@ class Frame: NSObject {
     
     //Checks a diagonal
     func diagonalRow5 (Row row: Int, Column column: Int, ChipColor: Chip) -> Int {
-        print("diagonalRow5 RAN")
         if (((spaces[3][5] == ChipColor) && (spaces[4][4] == ChipColor) && (spaces[5][3] == ChipColor) && (spaces[6][2] == ChipColor)) || ((spaces[3][5] == ChipColor) && (spaces[2][4] == ChipColor) && (spaces[1][3] == ChipColor) && (spaces[0][2] == ChipColor))) {
             return 1
         }
@@ -160,7 +158,6 @@ class Frame: NSObject {
     
     //Checks a diagonal
     func diagonalRow4 (Row row: Int, Column column: Int, ChipColor: Chip) -> Int {
-        print("diagonalRow4 RAN")
         for i in 0..<2 {
             if (((spaces[2 + i][5 - i] == ChipColor) && (spaces[3 + i][4 - i] == ChipColor) && (spaces[4 + i][3 - i] == ChipColor) && (spaces[5 + i][2 - i] == ChipColor)) || ((spaces[4 - i][5 - i] == ChipColor) && (spaces[3 - i][4 - i] == ChipColor) && (spaces[2 - i][3 - i] == ChipColor) && (spaces[1 - i][2 - i] == ChipColor))) {
                 return 1
@@ -171,7 +168,6 @@ class Frame: NSObject {
     
     //Checks a diagonal
     func diagonalRow3 (Row row: Int, Column column: Int, ChipColor: Chip) -> Int {
-       print("diagonalRow3 RAN")
         for i in 0..<3 {
             if (((spaces[1 + i][5 - i] == ChipColor) && (spaces[2 + i][4 - i] == ChipColor) && (spaces[3 + i][3 - i] == ChipColor) && (spaces[4 + i][2 - i] == ChipColor)) || ((spaces[5 - i][5 - i] == ChipColor) && (spaces[4 - i][4 - i] == ChipColor) && (spaces[3 - i][3 - i] == ChipColor) && (spaces[2 - i][2 - i] == ChipColor))) {
                 return 1
@@ -182,7 +178,6 @@ class Frame: NSObject {
     
     //Check a diagonal
     func diagonalRow2 (Row row: Int, Column column: Int, ChipColor: Chip) -> Int {
-        print("diagonalRow2 RANNANAN")
         for i in 0..<3 {
             if (((spaces[0 + i][5 - i] == ChipColor) && (spaces[1 + i][4 - i] == ChipColor) && (spaces[2 + i][3 - i] == ChipColor) && (spaces[3 + i][2 - i] == ChipColor)) || ((spaces[6 - i][5 - i] == ChipColor) && (spaces[5 - i][4 - i] == ChipColor) && (spaces[4 - i][3 - i] == ChipColor) && (spaces[3 - i][2 - i] == ChipColor))) {
                 return 1
@@ -193,7 +188,6 @@ class Frame: NSObject {
     
     //Checks a diagonal
     func diagonalRow1 (Row row: Int, Column column: Int, ChipColor: Chip) -> Int {
-        print("diagonalRow1 RAN")
         for i in 0..<2 {
             if (((spaces[0 + i][4 - i] == ChipColor) && (spaces[1 + i][3 - i] == ChipColor) && (spaces[2 + i][2 - i] == ChipColor) && (spaces[3 + i][1 - i] == ChipColor)) || ((spaces[6 - i][4 - i] == ChipColor) && (spaces[5 - i][3 - i] == ChipColor) && (spaces[4 - i][2 - i] == ChipColor) && (spaces[3 - i][1 - i] == ChipColor))) {
                    return 1
@@ -204,7 +198,6 @@ class Frame: NSObject {
     
     //Checks a diagonal
     func diagonalRow0 (Row row: Int, Column column: Int, ChipColor: Chip) -> Int {
-        print("diagonalRow0 RAN")
         if (((spaces[0][3] == ChipColor) && (spaces[1][2] == ChipColor) && (spaces[2][1] == ChipColor) && (spaces[3][0] == ChipColor)) || ((spaces[6][3] == ChipColor) && (spaces[5][2] == ChipColor) && (spaces[4][1] == ChipColor) && (spaces[3][0] == ChipColor))){
             return 1
         }
