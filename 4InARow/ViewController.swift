@@ -19,8 +19,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var youImage: UIImageView!
     @IBOutlet weak var playAgainButton: UIButton!
     @IBOutlet weak var endGamePopup: UIImageView!
+    @IBOutlet weak var playerWinCount: UILabel!
+    @IBOutlet weak var computerWinCount: UILabel!
     
     static var chipsPlayed = 0
+    var playerWins = 0
+    var computerWins = 0
     var frame: Frame!
     var label = UILabel(frame: CGRect(x: 0, y: 0, width: 250, height: 21))
 
@@ -33,6 +37,9 @@ class ViewController: UIViewController {
         youImage.isHighlighted = true
         playAgainButton.isHidden = true
         endGamePopup.isHidden = true
+        
+        playerWinCount.text =  "\(playerWins) WINS"
+        computerWinCount.text = "\(computerWins) WINS"
     }
     
     @IBAction func play(_ sender: UIButton) {
@@ -128,6 +135,7 @@ class ViewController: UIViewController {
     
     func youWon() {
         stackView.isUserInteractionEnabled = false
+        playerWins += 1
         endGamePopup.image = UIImage(named: "youWin")
         playAgainButton.isHidden = false
         endGamePopup.isHidden = false
@@ -135,6 +143,7 @@ class ViewController: UIViewController {
     
     func youLost() {
         stackView.isUserInteractionEnabled = false
+        computerWins += 1
         endGamePopup.image = UIImage(named: "youLost")
         playAgainButton.isHidden = false
         endGamePopup.isHidden = false
@@ -156,6 +165,8 @@ class ViewController: UIViewController {
         playAgainButton.isHidden = true
         endGamePopup.isHidden = true
         stackView.isUserInteractionEnabled = true
+        playerWinCount.text =  "\(playerWins) WINS"
+        computerWinCount.text = "\(computerWins) WINS"
     }
     
 }
