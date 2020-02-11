@@ -19,57 +19,65 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                                 <color key="backgroundColor" red="0.10588235410000001" green="0.1058823839" blue="0.10588235410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grid" translatesAutoresizingMaskIntoConstraints="NO" id="e99-ju-16K">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e99-ju-16K">
                                 <rect key="frame" x="125" y="118" width="854" height="696"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aA0-1H-bvE">
                                 <rect key="frame" x="149" y="118" width="814" height="696"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWE-zw-WKg">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWE-zw-WKg">
                                         <rect key="frame" x="0.0" y="0.0" width="116.5" height="696"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="buttonFrame"/>
                                         <connections>
                                             <action selector="play:" destination="IkH-9f-cfh" eventType="touchUpInside" id="fEo-h2-gA8"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oH9-Ah-Bx1">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oH9-Ah-Bx1">
                                         <rect key="frame" x="116.5" y="0.0" width="116" height="696"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="buttonFrame"/>
                                         <connections>
                                             <action selector="play:" destination="IkH-9f-cfh" eventType="touchUpInside" id="VPE-2C-dhU"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7K-06-fb2">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7K-06-fb2">
                                         <rect key="frame" x="232.5" y="0.0" width="116.5" height="696"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="buttonFrame"/>
                                         <connections>
                                             <action selector="play:" destination="IkH-9f-cfh" eventType="touchUpInside" id="5Gz-va-xoW"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyA-jL-vMN">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyA-jL-vMN">
                                         <rect key="frame" x="349" y="0.0" width="116" height="696"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="buttonFrame"/>
                                         <connections>
                                             <action selector="play:" destination="IkH-9f-cfh" eventType="touchUpInside" id="Duv-31-6pE"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CpY-mU-eeo">
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CpY-mU-eeo">
                                         <rect key="frame" x="465" y="0.0" width="116.5" height="696"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="buttonFrame"/>
                                         <connections>
                                             <action selector="play:" destination="IkH-9f-cfh" eventType="touchUpInside" id="loJ-Q5-xiC"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfB-d6-Tff">
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfB-d6-Tff">
                                         <rect key="frame" x="581.5" y="0.0" width="116" height="696"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="buttonFrame"/>
                                         <connections>
                                             <action selector="play:" destination="IkH-9f-cfh" eventType="touchUpInside" id="2n4-cp-Afa"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="268-he-8lc">
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="268-he-8lc">
                                         <rect key="frame" x="697.5" y="0.0" width="116.5" height="696"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="buttonFrame"/>
                                         <connections>
                                             <action selector="play:" destination="IkH-9f-cfh" eventType="touchUpInside" id="Ewm-Pj-2En"/>
                                         </connections>
@@ -129,7 +137,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="computer" highlightedImage="computerPressed" translatesAutoresizingMaskIntoConstraints="NO" id="61X-p5-MFR">
                                 <rect key="frame" x="804" y="29" width="214" height="89"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="214" id="efi-z3-d92"/>
+                                    <constraint firstAttribute="width" constant="214" id="fyU-vb-0Iy"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="you" highlightedImage="youPressed" translatesAutoresizingMaskIntoConstraints="NO" id="awx-8c-zbQ">
@@ -138,34 +146,49 @@
                                     <constraint firstAttribute="height" constant="89" id="vGC-Bg-dy2"/>
                                 </constraints>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boardFull" translatesAutoresizingMaskIntoConstraints="NO" id="h2H-Tn-yv3">
+                                <rect key="frame" x="397" y="161" width="320" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deV-7m-raV">
+                                <rect key="frame" x="477" y="245" width="157" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="playAgain"/>
+                                <connections>
+                                    <action selector="playAgain:" destination="IkH-9f-cfh" eventType="touchUpInside" id="erR-Vi-RP9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Tr3-0K-Ulc" firstAttribute="trailing" secondItem="e99-ju-16K" secondAttribute="trailing" constant="133" id="6Zy-bv-J7a"/>
                             <constraint firstItem="Rlm-Dc-hAV" firstAttribute="top" secondItem="Tr3-0K-Ulc" secondAttribute="top" constant="37" id="7F7-LM-KcL"/>
-                            <constraint firstItem="vaZ-Ug-3Yz" firstAttribute="centerX" secondItem="aA0-1H-bvE" secondAttribute="centerX" id="Cfq-uB-abE"/>
-                            <constraint firstItem="e99-ju-16K" firstAttribute="bottom" secondItem="aA0-1H-bvE" secondAttribute="bottom" id="FCk-ob-bIO"/>
                             <constraint firstItem="Rlm-Dc-hAV" firstAttribute="leading" secondItem="awx-8c-zbQ" secondAttribute="trailing" constant="93" id="HIY-g6-YNi"/>
                             <constraint firstItem="vaZ-Ug-3Yz" firstAttribute="top" secondItem="Tr3-0K-Ulc" secondAttribute="top" id="HaX-fA-l1H"/>
                             <constraint firstItem="e99-ju-16K" firstAttribute="leading" secondItem="Tr3-0K-Ulc" secondAttribute="leading" constant="125" id="MJI-4W-KcK"/>
-                            <constraint firstItem="aA0-1H-bvE" firstAttribute="leading" secondItem="Tr3-0K-Ulc" secondAttribute="leading" constant="149" id="Meo-LP-ao6"/>
                             <constraint firstItem="awx-8c-zbQ" firstAttribute="top" secondItem="Tr3-0K-Ulc" secondAttribute="top" constant="29" id="NUR-4E-Qtr"/>
+                            <constraint firstItem="aA0-1H-bvE" firstAttribute="bottom" secondItem="e99-ju-16K" secondAttribute="bottom" id="P5K-oX-wK4"/>
+                            <constraint firstItem="61X-p5-MFR" firstAttribute="bottom" secondItem="awx-8c-zbQ" secondAttribute="bottom" id="QUy-Td-v9Y"/>
                             <constraint firstItem="Tr3-0K-Ulc" firstAttribute="bottom" secondItem="e99-ju-16K" secondAttribute="bottom" constant="20" id="SXT-Ge-T2k"/>
                             <constraint firstItem="vaZ-Ug-3Yz" firstAttribute="bottom" secondItem="Tr3-0K-Ulc" secondAttribute="bottom" id="Sr1-Dw-PJw"/>
                             <constraint firstItem="vaZ-Ug-3Yz" firstAttribute="leading" secondItem="Tr3-0K-Ulc" secondAttribute="leading" id="TRg-8R-RTw"/>
-                            <constraint firstItem="e99-ju-16K" firstAttribute="top" secondItem="aA0-1H-bvE" secondAttribute="top" id="ZOR-Ri-Xd7"/>
+                            <constraint firstItem="aA0-1H-bvE" firstAttribute="centerX" secondItem="vaZ-Ug-3Yz" secondAttribute="centerX" id="YPW-vS-zzx"/>
+                            <constraint firstItem="61X-p5-MFR" firstAttribute="top" secondItem="awx-8c-zbQ" secondAttribute="top" id="Ype-f3-eTc"/>
+                            <constraint firstItem="61X-p5-MFR" firstAttribute="leading" secondItem="vaZ-Ug-3Yz" secondAttribute="trailing" constant="-308" id="ZMC-HJ-jc0"/>
+                            <constraint firstItem="aA0-1H-bvE" firstAttribute="leading" secondItem="Tr3-0K-Ulc" secondAttribute="leading" constant="149" id="cF8-Z5-T02"/>
                             <constraint firstItem="awx-8c-zbQ" firstAttribute="leading" secondItem="Tr3-0K-Ulc" secondAttribute="leading" constant="92" id="df2-rL-G23"/>
                             <constraint firstItem="Rlm-Dc-hAV" firstAttribute="leading" secondItem="Tr3-0K-Ulc" secondAttribute="leading" constant="399" id="ecm-95-LgN"/>
-                            <constraint firstItem="61X-p5-MFR" firstAttribute="top" secondItem="awx-8c-zbQ" secondAttribute="top" id="euD-Fp-dO3"/>
-                            <constraint firstItem="61X-p5-MFR" firstAttribute="bottom" secondItem="awx-8c-zbQ" secondAttribute="bottom" id="jeC-jy-6gR"/>
+                            <constraint firstItem="aA0-1H-bvE" firstAttribute="top" secondItem="e99-ju-16K" secondAttribute="top" id="egT-Sp-l3h"/>
                             <constraint firstItem="vaZ-Ug-3Yz" firstAttribute="centerX" secondItem="RXB-Cq-WPO" secondAttribute="centerX" id="lLl-ZH-JeL"/>
+                            <constraint firstItem="61X-p5-MFR" firstAttribute="leading" secondItem="Rlm-Dc-hAV" secondAttribute="trailing" constant="89" id="m6g-4P-y47"/>
                             <constraint firstItem="e99-ju-16K" firstAttribute="top" secondItem="Rlm-Dc-hAV" secondAttribute="bottom" constant="10.5" id="oSs-Eq-ljv"/>
-                            <constraint firstItem="61X-p5-MFR" firstAttribute="leading" secondItem="Rlm-Dc-hAV" secondAttribute="trailing" constant="89" id="ww3-Nn-um0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Tr3-0K-Ulc"/>
                     </view>
                     <connections>
                         <outlet property="computerImage" destination="61X-p5-MFR" id="7JA-8j-d7P"/>
+                        <outlet property="endGamePopup" destination="h2H-Tn-yv3" id="oZO-hc-xN4"/>
+                        <outlet property="playAgainButton" destination="deV-7m-raV" id="w1o-ac-dzQ"/>
                         <outlet property="stackView" destination="aA0-1H-bvE" id="Ecf-fB-yU3"/>
                         <outlet property="youImage" destination="awx-8c-zbQ" id="ke3-pr-Hrg"/>
                         <outletCollection property="colButtons" destination="vWE-zw-WKg" collectionClass="NSMutableArray" id="LtM-iY-jMw"/>
@@ -183,9 +206,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="boardFull" width="517" height="205.5"/>
+        <image name="buttonFrame" width="122" height="666"/>
         <image name="computer" width="247" height="122"/>
         <image name="computerPressed" width="247" height="122"/>
-        <image name="grid" width="762" height="701.5"/>
+        <image name="playAgain" width="170" height="71"/>
         <image name="you" width="247" height="122"/>
         <image name="youPressed" width="247" height="122"/>
     </resources>

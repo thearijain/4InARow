@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var computerImage: UIImageView!
     @IBOutlet weak var youImage: UIImageView!
+    @IBOutlet weak var playAgainButton: UIButton!
+    @IBOutlet weak var endGamePopup: UIImageView!
     
     static var chipsPlayed = 0
     var frame: Frame!
@@ -29,40 +31,66 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         youImage.isHighlighted = true
-        
-        
+        playAgainButton.isHidden = true
+        endGamePopup.isHidden = true
     }
     
     @IBAction func play(_ sender: UIButton) {
         
         let column  = sender.tag
-        if (frame.isColumnFull(column: column)) {
+        if (frame.isColumnFull(column: column) == false) {
             dropChip(chip: frame.currentChip, Column: column)
-            frame.set(column: column)
+            
+            let result = frame.set(column: column)
+            if (result == 1) {
+                youWon()
+                return
+            } else if (result == 2) {
+                youLost()
+                return
+            }
+            
             frame.switchColor()
             ViewController.chipsPlayed += 1
             
+            //Calls the computer to play
             if (frame.currentChip == Chip.green) {
+                stackView.isUserInteractionEnabled = false
                 youImage.isHighlighted = false
                 computerImage.isHighlighted = true
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     self.opponentTurn()
+                    self.stackView.isUserInteractionEnabled = true
                 }
             }
-            //opponentTurn()
         }
+        if (frame.isFrameFull()) { boardFull() }
     }
         
     func opponentTurn() {
         let column = Int.random(in: 0..<7)
-        
-        if (frame.isColumnFull(column: column)) {
+        if (frame.isColumnFull(column: column) == false) {
             dropChip(chip: frame.currentChip, Column: column)
-            frame.set(column: column)
+            
+            let result = frame.set(column: column)
+            if (result == 1) {
+               youWon()
+               return
+            } else if (result == 2) {
+               youLost()
+                return
+            }
+            
             frame.switchColor()
             ViewController.chipsPlayed += 1
             youImage.isHighlighted = true
             computerImage.isHighlighted = false
+        } else if (frame.isColumnFull(column: column) == true) {
+            opponentTurn()
+        }
+        if (frame.isFrameFull()) {
+            boardFull()
+            return
         }
     }
 
@@ -91,26 +119,45 @@ class ViewController: UIViewController {
         return min(stackView.frame.height / 6 - 16, stackView.frame.width / 7 - 16)
     }
     
-    func resetGame() {
-        ViewController.chipsPlayed = 0
-        
-        for view in stackView.subviews{
-            view.removeFromSuperview()
-        }
-        
-        frame = .init()
+    func boardFull() {
+        stackView.isUserInteractionEnabled = false
+        endGamePopup.image = UIImage(named: "boardFull")
+        playAgainButton.isHidden = false
+        endGamePopup.isHidden = false
     }
     
     func youWon() {
-        
-        let imageViewObj = UIImageView(frame: CGRect(x: 350, y: -172.47, width: CGFloat(483.54), height: CGFloat(172.47)))
-        imageViewObj.image = UIImage(named: "youWin")
-        stackView.addSubview(imageViewObj)
-
-        UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseIn, animations:{
-         imageViewObj.frame.origin.y = 500
-        }, completion: nil)
+        stackView.isUserInteractionEnabled = false
+        endGamePopup.image = UIImage(named: "youWin")
+        playAgainButton.isHidden = false
+        endGamePopup.isHidden = false
     }
+    
+    func youLost() {
+        stackView.isUserInteractionEnabled = false
+        endGamePopup.image = UIImage(named: "youLost")
+        playAgainButton.isHidden = false
+        endGamePopup.isHidden = false
+    }
+    
+    @IBAction func playAgain(_ sender: Any) {
+        ViewController.chipsPlayed = 0
+               
+        for view in stackView.subviews{
+            if view is UIButton {
+                 //Do nothing
+            } else {
+                view.removeFromSuperview()
+            }
+        }
+
+        frame = .init()
+        youImage.isHighlighted = true
+        playAgainButton.isHidden = true
+        endGamePopup.isHidden = true
+        stackView.isUserInteractionEnabled = true
+    }
+    
 }
 
 
