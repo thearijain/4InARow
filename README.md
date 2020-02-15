@@ -12,15 +12,11 @@ Decided to sit down over a weekend and create this simple game. What I really wa
 
 <img src="https://github.com/thearijain/MixIt/blob/master/ReadMePictures/Simulator%20Screen%20Shot%20-%20iPhone%208%20-%202019-12-15%20at%2022.24.21.png" width="500" height="280" img align="right">
 
-• Choose from a list of songs to mix with
+• Has a randomized computer opponent
+• Great user interface
+• Displays wins during current app session
+• Has a very efficient method for checking a win (4 in a row) 
 
-• Set a loop using the loop page to get a cleaner mix
-
-• Set up to four cue points within the songs to jump around the track easier
-
-• Access a sampler with four different sounds to overlay your mix with
-
-• Use the crossfader to jump from deck to deck to get that perfect mix
 
 
 
