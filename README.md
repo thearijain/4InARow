@@ -3,8 +3,8 @@
 
 Made a simple Connect4 game! 
 
-## My third app!
-Decided to sit down over a weekend and create this simple game. What I really wanted to focus on was creating a simple yet beautiful user interface, while also finding the most efficient ways to check for a win. 
+## Our third app!
+Your favorite app developers decided to sit down over a weekend and create this simple game. What we really wanted to focus on was creating a simple yet beautiful user interface, while also finding the most efficient ways to check for four-in-a-row.
 
 
 
