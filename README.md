@@ -10,7 +10,7 @@ Decided to sit down over a weekend and create this simple game. What I really wa
 
 ## Features:
 
-<img src="https://github.com/thearijain/MixIt/blob/master/ReadMePictures/Screen%20Shot%202020-02-15%20at%205.38.02%20PM.png" width="500" height="375" img align="right">
+<img src="https://media.giphy.com/media/IdrUBRSKHuFIHpDASC/giphy.gif" width="500" height="375" img align="right">
 
 • Has a randomized computer opponent
 
