@@ -25,3 +25,11 @@ Decided to sit down over a weekend and create this simple game. What I really wa
 
 
 
+## So what's the point of this?
+
+• Surely you must be thinking of how simple of a game we built, but that's where you're wrong!
+
+• The innovation this game elicits is its win checking ability! 
+
+
+
