@@ -14,11 +14,11 @@ Decided to sit down over a weekend and create this simple game. What I really wa
 
 • Has a randomized computer opponent
 
-• Great user interface
+• Great user interface and user experience
 
 • Displays wins during current app session
 
-• Has a very efficient method for checking a win (4 in a row) 
+• Has a very efficient win checking a win (4 in a row) 
 
 
 
