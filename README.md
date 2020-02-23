@@ -22,14 +22,23 @@ Your favorite app developers (me & [@kshriv](https://github.com/kshriv)) decided
 
 
 
+## Takeaways:
+
+• Created a large portion of this application without the storyboard editor, instead we focused on creating almost all the UIImageViews, UIButtons, and UIStackViews programmatically
+
+• Implemented distinguishing Swift files that differentiated between the frontend and backend of the game
+
+• The chip drop animation was harder to implement than it seems!
 
 
 
 ## So what's the point of this?
 
-• Surely you must be thinking of how simple of a game we built, but that's where you're wrong!
+• Learning more about Swift and the app development process.
 
-• The innovation this game elicits is its [win checking ability](https://github.com/thearijain/MixIt/blob/master/ReadMePictures/isWin()%20(2).pdf).
+• Focus on creating the application as programmatically as possible in order to bettwr understand UIKit and Swift objects
+
+• Focus on creating a very efficient [win checking ability](https://github.com/thearijain/MixIt/blob/master/ReadMePictures/isWin()%20(2).pdf).
 
 
 
