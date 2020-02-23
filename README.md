@@ -29,7 +29,7 @@ Decided to sit down over a weekend and create this simple game. What I really wa
 
 • Surely you must be thinking of how simple of a game we built, but that's where you're wrong!
 
-• The innovation this game elicits is its [win checking ability] (https://github.com/thearijain/MixIt/blob/master/ReadMePictures/isWin()%20(2).pdf).
+• The innovation this game elicits is its [win checking ability](https://github.com/thearijain/MixIt/blob/master/ReadMePictures/isWin()%20(2).pdf).
 
 
 
