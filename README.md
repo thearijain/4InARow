@@ -3,7 +3,7 @@
 
 Made a simple Connect4 game! 
 
-## Our third app!
+## My third app!
 Your favorite app developer decided to sit down over a weekend and create this simple game. What I really wanted to focus on was creating a simple yet beautiful user interface, while also finding the most efficient ways to check for four-in-a-row.
 
 
